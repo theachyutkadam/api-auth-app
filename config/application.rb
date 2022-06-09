@@ -37,5 +37,6 @@ module ApiAuthApp
     config.api_only = true
 
     config.autoload_paths << Rails.root.join('lib')
+    Rails.logger = Logger.new(STDOUT)
   end
 end
